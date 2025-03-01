@@ -80,13 +80,3 @@ data:extend({
         take_result = "spoilables-freezer"
     }
 })
-
-if settings.startup["temp-limit"].value then
-    data:extend({
-        {
-            type = "surface-property",
-            name = "temperature",
-            default_value = -270,
-        },
-    })
-end

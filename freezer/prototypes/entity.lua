@@ -237,7 +237,7 @@ container.inventory_size = 19
 data:extend({container})
 
 if settings.startup["temp-limit"].value then
-  local temp_limit = 50
+  local temp_limit = 323.15
   data.raw["assembling-machine"]["freezer"].surface_conditions = {
     {
         property = "temperature",

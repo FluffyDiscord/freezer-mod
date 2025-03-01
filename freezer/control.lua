@@ -18,11 +18,11 @@ local function on_built(event)
     if entity.name == "spoilables-freezer" then
         local surf = entity.surface
         local planet = surf.planet
-        local temp = -270
+        local temp = 0.0
         if planet then
-            temp = planet.prototype.surface_properties.temperature or 18
+            temp = planet.prototype.surface_properties.temperature or 291.15
         end
-        local power = math.max(temp, 0) / 18
+        local power = math.max(temp - 273.15, 0) / 18
         entity.power_usage = power * 1000000 / 60
         local container = surf.create_entity{
             name = "spoilables-freezer-container",
