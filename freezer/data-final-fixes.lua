@@ -104,6 +104,10 @@ data:extend(frozen_items)
 local base_recipe = {
     type = "recipe",
     category = "freezer-category",
+    allow_productivity = false,
+    allow_quality = false,
+    allowed_module_categories = {"efficiency", "speed"},
+    maximum_productivity = 0,
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -131,8 +135,6 @@ for _, item in pairs(frozen_items) do
     local o_name = string.sub(item.name, 12)
     recipe.ingredients[2].name = o_name
     recipe.category = "freezer-cryogenics-category"
-    recipe.allow_productivity = false
-    recipe.allow_quality = false
     recipe.results[1].name = item.name
     recipe.name = "MOD-FREEZE-" .. o_name
     recipe.localised_name = {"custom.freeze", item.localised_name[2]}
@@ -151,15 +153,12 @@ for _, item in pairs(frozen_items) do
     local recipe = util.table.deepcopy(base_recipe)
     local o_name = string.sub(item.name, 12)
     recipe.ingredients = {{type = "item", name = item.name, amount = 1}}
+    recipe.category = "smelting"
     recipe.results[1].name = o_name
     recipe.name = "MOD-UNFREEZE-" .. item.name
     recipe.localised_name = {"custom.unfreeze", item.localised_name[2]}
     recipe.order = item.order
     recipe.subgroup = "unfreezing-subgroup"
-    recipe.category = "smelting"
-    recipe.allow_productivity = false
-    recipe.allow_quality = false
-    recipe.allowed_module_categories = {"efficiency", "speed"}
     recipe.icons = util.table.deepcopy(item.icons)
     table.insert(recipe.icons, {
         icon = "__freezer__/graphics/icons/fire.png",
