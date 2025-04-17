@@ -61,8 +61,10 @@ local function on_entity_removed(event)
         storage.spoilage_freezer_wagons[entity.unit_number] = nil
         for index, equipment in ipairs(entity.grid.equipment) do
             local item = equipment.prototype.take_result
-            local item_stack = {name=item.name, count=1, quality=equipment.quality}
-            entity.surface.spill_item_stack{position=entity.position, stack=item_stack, enable_looted=true, force=entity.force, allow_belts=false}
+            if not item == nil then
+                local item_stack = {name=item.name, count=1, quality=equipment.quality}
+                entity.surface.spill_item_stack{position=entity.position, stack=item_stack, enable_looted=true, force=entity.force, allow_belts=false}
+            end
         end
     end
 end
