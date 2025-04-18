@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.4
-Date: 31.01.2025
+Date: 18.04.2025
+  Bugfixes:
+    - Added a migrations for switching from the original freezer mod to the fork
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 18.04.2025
   Info:
     - Created the fork
   Features:
