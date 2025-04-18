@@ -62,7 +62,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "freeze-water-catalysed",
+        name = "freeze-water-catalyzed",
         category = "freezer-cryogenics-category",
         order = "2",
         subgroup = "ice-subgroup",

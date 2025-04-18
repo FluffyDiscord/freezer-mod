@@ -28,7 +28,7 @@ data:extend({
   {
     type = "technology",
     name = "freezing-catalyzed",
-    icon = "__space-age__/graphics/icons/ice.png",
+    icon = "__freezer-forked__/graphics/technology/freezer.png",
     icon_size = 256,
     prerequisites = {"freezing"},
     research_trigger = {
@@ -39,7 +39,7 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "freeze-water-catalysed"
+        recipe = "freeze-water-catalyzed"
       }
     },
     order = "a"
