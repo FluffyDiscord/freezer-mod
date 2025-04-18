@@ -2,10 +2,11 @@
 Fork of the original Freezer mod with a few bugfixes
 
 Changes made with respect to the original mod:
-- Uses PlanetLibs temperature system instead of a proprietary one
-- Added Refrigerators with logistics support
 - Changed the structure of the refrigerator to primarily place the chest instead of the energy interface to fix multiple of bugs when using refrigerators in blueprints
 - Fixed crash when deconstructing a cryogenic wagon with a ghost in the equipment grid
+- Added a limit of 0% productivity to the melting recipes to prevent infinite production loops with furnaces that already have productivity modules in them befor starting the recipe or modded furnaces with a base productivity
+- Uses PlanetLibs temperature system instead of a proprietary one
+- Added Refrigerators with logistics support
 
 Original Mod page: https://mods.factorio.com/mod/freezer
 
