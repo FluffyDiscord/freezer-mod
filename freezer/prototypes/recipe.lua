@@ -100,6 +100,146 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "spoilables-freezer-active-provider",
+        category = "crafting",
+        enabled = false,
+        energy_required = 5,
+        order = "2",
+        subgroup = "freezing-machines-subgroup",
+        ingredients = {
+            {
+                type = "item",
+                name = "spoilables-freezer",
+                amount = 1
+            },
+            {
+                type = "item",
+                name = "active-provider-chest",
+                amount = 1
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "spoilables-freezer-active-provider",
+                amount = 1
+            }
+        }
+    },
+    {
+        type = "recipe",
+        name = "spoilables-freezer-provider",
+        category = "crafting",
+        enabled = false,
+        energy_required = 5,
+        order = "2",
+        subgroup = "freezing-machines-subgroup",
+        ingredients = {
+            {
+                type = "item",
+                name = "spoilables-freezer",
+                amount = 1
+            },
+            {
+                type = "item",
+                name = "passive-provider-chest",
+                amount = 1
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "spoilables-freezer-provider",
+                amount = 1
+            }
+        }
+    },
+    {
+        type = "recipe",
+        name = "spoilables-freezer-storage",
+        category = "crafting",
+        enabled = false,
+        energy_required = 5,
+        order = "2",
+        subgroup = "freezing-machines-subgroup",
+        ingredients = {
+            {
+                type = "item",
+                name = "spoilables-freezer",
+                amount = 1
+            },
+            {
+                type = "item",
+                name = "storage-chest",
+                amount = 1
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "spoilables-freezer-storage",
+                amount = 1
+            }
+        }
+    },
+    {
+        type = "recipe",
+        name = "spoilables-freezer-buffer",
+        category = "crafting",
+        enabled = false,
+        energy_required = 5,
+        order = "2",
+        subgroup = "freezing-machines-subgroup",
+        ingredients = {
+            {
+                type = "item",
+                name = "spoilables-freezer",
+                amount = 1
+            },
+            {
+                type = "item",
+                name = "buffer-chest",
+                amount = 1
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "spoilables-freezer-buffer",
+                amount = 1
+            }
+        }
+    },
+    {
+        type = "recipe",
+        name = "spoilables-freezer-requester",
+        category = "crafting",
+        enabled = false,
+        energy_required = 5,
+        order = "2",
+        subgroup = "freezing-machines-subgroup",
+        ingredients = {
+            {
+                type = "item",
+                name = "spoilables-freezer",
+                amount = 1
+            },
+            {
+                type = "item",
+                name = "requester-chest",
+                amount = 1
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "spoilables-freezer-requester",
+                amount = 1
+            }
+        }
+    },
+    {
+        type = "recipe",
         name = "cargo-wagon-freezer",
         category = "crafting-with-fluid",
         enabled = false,

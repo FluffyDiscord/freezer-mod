@@ -24,11 +24,81 @@ data:extend({
   },
   {
     type = "item",
+    name = "spoilables-freezer-active-provider",
+    icons = {{
+      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon_size = 256,
+      tint = {1,0.25,1}
+             }},
+    subgroup = "freezing-machines-subgroup",
+    order = "3",
+    stack_size = 50,
+    place_result = "spoilables-freezer-active-provider",
+    weight = 40000,
+  },
+  {
+    type = "item",
+    name = "spoilables-freezer-provider",
+    icons = {{
+      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon_size = 256,
+      tint = {1,0.25,0.25}
+             }},
+    subgroup = "freezing-machines-subgroup",
+    order = "4",
+    stack_size = 50,
+    place_result = "spoilables-freezer-provider",
+    weight = 40000,
+  },
+  {
+    type = "item",
+    name = "spoilables-freezer-storage",
+    icons = {{
+      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon_size = 256,
+      tint = {1,1,0.25}
+             }},
+    subgroup = "freezing-machines-subgroup",
+    order = "5",
+    stack_size = 50,
+    place_result = "spoilables-freezer-storage",
+    weight = 40000,
+  },
+  {
+    type = "item",
+    name = "spoilables-freezer-buffer",
+    icons = {{
+      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon_size = 256,
+      tint = {0.25,1,0.25}
+             }},
+    subgroup = "freezing-machines-subgroup",
+    order = "6",
+    stack_size = 50,
+    place_result = "spoilables-freezer-buffer",
+    weight = 40000,
+  },
+  {
+    type = "item",
+    name = "spoilables-freezer-requester",
+    icons = {{
+      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon_size = 256,
+      tint = {0.25,0.25,1}
+             }},
+    subgroup = "freezing-machines-subgroup",
+    order = "7",
+    stack_size = 50,
+    place_result = "spoilables-freezer-requester",
+    weight = 40000,
+  },
+  {
+    type = "item",
     name = "cargo-wagon-freezer",
     icon = "__freezer__/graphics/icons/cargo-wagon-freezer.png",
     icon_size = 64,
     subgroup = "freezing-machines-subgroup",
-    order = "3",
+    order = "8",
     stack_size = 5,
     place_result = "cargo-wagon-freezer",
     weight = 200000,

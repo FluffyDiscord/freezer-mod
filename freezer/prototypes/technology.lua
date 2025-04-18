@@ -89,6 +89,74 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "spoilables-freezer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "spoilables-freezer-provider"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "spoilables-freezer-storage"
+      }
+    },
+    order = "a"
+  },
+  {
+    type = "technology",
+    name = "refrigeration-logistics",
+    icon = "__freezer__/graphics/technology/spoilables-freezer.png",
+    icon_size = 256,
+    prerequisites = {"refrigeration", "promethium-science-pack"},
+    unit = {
+      count = 2000,
+      ingredients = {
+        {
+          "automation-science-pack",
+          1
+        },
+        {
+          "logistic-science-pack",
+          1
+        },
+        {
+          "chemical-science-pack",
+          1
+        },
+        {
+          "production-science-pack",
+          1
+        },
+        {
+          "utility-science-pack",
+          1
+        },
+        {
+          "space-science-pack",
+          1
+        },
+        {
+          "cryogenic-science-pack",
+          1
+        },
+        {
+          "promethium-science-pack",
+          1
+        }
+      },
+      time = 60
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "spoilables-freezer-active-provider"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "spoilables-freezer-buffer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "spoilables-freezer-requester"
       }
     },
     order = "a"
