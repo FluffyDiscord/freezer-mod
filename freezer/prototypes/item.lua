@@ -2,7 +2,7 @@ data:extend({
   {
     type = "item",
     name = "freezer",
-    icon = "__freezer__/graphics/icons/freezer.png",
+    icon = "__freezer-forked__/graphics/icons/freezer.png",
     icon_size = 256,
     subgroup = "freezing-machines-subgroup",
     order = "1",
@@ -13,7 +13,7 @@ data:extend({
   {
     type = "item",
     name = "spoilables-freezer",
-    icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+    icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
     icon_size = 256,
     subgroup = "freezing-machines-subgroup",
     order = "2",
@@ -26,7 +26,7 @@ data:extend({
     type = "item",
     name = "spoilables-freezer-active-provider",
     icons = {{
-      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
       icon_size = 256,
       tint = {1,0.25,1}
              }},
@@ -40,7 +40,7 @@ data:extend({
     type = "item",
     name = "spoilables-freezer-provider",
     icons = {{
-      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
       icon_size = 256,
       tint = {1,0.25,0.25}
              }},
@@ -54,7 +54,7 @@ data:extend({
     type = "item",
     name = "spoilables-freezer-storage",
     icons = {{
-      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
       icon_size = 256,
       tint = {1,1,0.25}
              }},
@@ -68,7 +68,7 @@ data:extend({
     type = "item",
     name = "spoilables-freezer-buffer",
     icons = {{
-      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
       icon_size = 256,
       tint = {0.25,1,0.25}
              }},
@@ -82,7 +82,7 @@ data:extend({
     type = "item",
     name = "spoilables-freezer-requester",
     icons = {{
-      icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+      icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
       icon_size = 256,
       tint = {0.25,0.25,1}
              }},
@@ -95,7 +95,7 @@ data:extend({
   {
     type = "item",
     name = "cargo-wagon-freezer",
-    icon = "__freezer__/graphics/icons/cargo-wagon-freezer.png",
+    icon = "__freezer-forked__/graphics/icons/cargo-wagon-freezer.png",
     icon_size = 64,
     subgroup = "freezing-machines-subgroup",
     order = "8",

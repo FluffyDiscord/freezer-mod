@@ -16,7 +16,7 @@ data:extend({
         type = "item-group",
         name = "freezing-group",
         order = "zzz",
-        icon = "__freezer__/graphics/icons/freeze-tab.png",
+        icon = "__freezer-forked__/graphics/icons/freeze-tab.png",
         icon_size = 128
     },
     {
@@ -73,7 +73,7 @@ data:extend({
         },
         hidden_in_factoriopedia = true,
         sprite = {
-            filename = "__freezer__/graphics/icons/spoilables-freezer.png",
+            filename = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
             size = 256
         },
         categories = {"cargo-wagon-freezer"},

@@ -55,7 +55,7 @@ for _, category in pairs(data.raw) do
                 local original_icons = frozen_item.icons or {}
                 frozen_item.icons = {
                     {
-                        icon = "__freezer__/graphics/icons/ice.png",
+                        icon = "__freezer-forked__/graphics/icons/ice.png",
                         icon_size = 64
                     }
                 }
@@ -71,7 +71,7 @@ for _, category in pairs(data.raw) do
                     table.insert(frozen_item.icons, original_icon)
                 end
                 table.insert(frozen_item.icons,  {
-                    icon = "__freezer__/graphics/icons/ice-translucent.png",
+                    icon = "__freezer-forked__/graphics/icons/ice-translucent.png",
                     icon_size = 64
                 })
                 frozen_item.icon = nil
@@ -161,7 +161,7 @@ for _, item in pairs(frozen_items) do
     recipe.subgroup = "unfreezing-subgroup"
     recipe.icons = util.table.deepcopy(item.icons)
     table.insert(recipe.icons, {
-        icon = "__freezer__/graphics/icons/fire.png",
+        icon = "__freezer-forked__/graphics/icons/fire.png",
         icon_size = 64
     })
     local unlock = {
@@ -178,7 +178,7 @@ table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categori
 
 local cargo_wagon_freezer = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
 cargo_wagon_freezer.name = "cargo-wagon-freezer"
-cargo_wagon_freezer.icon = "__freezer__/graphics/icons/cargo-wagon-freezer.png"
+cargo_wagon_freezer.icon = "__freezer-forked__/graphics/icons/cargo-wagon-freezer.png"
 cargo_wagon_freezer.icon_size = 64
 cargo_wagon_freezer.weight = cargo_wagon_freezer.weight * 1.2
 cargo_wagon_freezer.inventory_size = cargo_wagon_freezer.inventory_size * 0.5
@@ -192,7 +192,7 @@ cargo_wagon_freezer.pictures.rotated.layers[2].tint = tint
 cargo_wagon_freezer.pictures.sloped.layers[1].tint = tint
 cargo_wagon_freezer.pictures.sloped.layers[2].tint = tint
 
-cargo_wagon_freezer.minimap_representation.filename = "__freezer__/graphics/icons/cargo-wagon-freezer-minimap-representation.png"
+cargo_wagon_freezer.minimap_representation.filename = "__freezer-forked__/graphics/icons/cargo-wagon-freezer-minimap-representation.png"
 -- Add Equipment Grid
 cargo_wagon_freezer.equipment_grid = "cargo-wagon-freezer-equipment-grid"
 cargo_wagon_freezer.minable.result = "cargo-wagon-freezer"
@@ -217,28 +217,28 @@ end
 
 update_sprite(
     cargo_wagon_freezer.vertical_doors.layers[1],
-    "__freezer__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-vertical.png",
+    "__freezer-forked__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-vertical.png",
     118,
     402
 )
 
 update_sprite(
     cargo_wagon_freezer.vertical_doors.layers[2],
-    "__freezer__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-vertical-mask.png",
+    "__freezer-forked__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-vertical-mask.png",
     110,
     332
 )
 
 update_sprite(
     cargo_wagon_freezer.horizontal_doors.layers[1],
-    "__freezer__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-horizontal.png",
+    "__freezer-forked__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-horizontal.png",
     438,
     84
 )
 
 update_sprite(
     cargo_wagon_freezer.horizontal_doors.layers[2],
-    "__freezer__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-horizontal-mask.png",
+    "__freezer-forked__/graphics/entity/cargo-wagon-freezer/cargo-wagon-door-horizontal-mask.png",
     368,
     80
 )

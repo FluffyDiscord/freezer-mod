@@ -4,7 +4,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "freezer",
-    icon = "__freezer__/graphics/icons/freezer.png",
+    icon = "__freezer-forked__/graphics/icons/freezer.png",
     icon_size = 256,
     source_inventory_size = 1,
     result_inventory_size = 1,
@@ -17,7 +17,7 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     graphics_set = {
       animation = {
-          filename = "__freezer__/graphics/entity/freezer/freezer.png",
+          filename = "__freezer-forked__/graphics/entity/freezer/freezer.png",
           width = 256,
           height = 256,
           scale = 0.42, --0.375
@@ -61,7 +61,7 @@ data:extend({
   {
     type = "electric-energy-interface",
     name = "spoilables-freezer-interface",
-    icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+    icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
     icon_size = 256,
     energy_source = {
         type = "electric",
@@ -92,7 +92,7 @@ local all_freezers = {
 
 local container = util.table.deepcopy(data.raw["container"]["steel-chest"])
 container.name = "spoilables-freezer"
-container.icon = "__freezer__/graphics/icons/spoilables-freezer.png"
+container.icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png"
 container.icon_size = 256
 container.flags = {"placeable-player", "player-creation"}
 container.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
@@ -103,7 +103,7 @@ container.corpse = "medium-remnants"
 container.dying_explosion = "medium-explosion"
 container.additional_pastable_entities = all_freezers
 container.picture = {
-      filename = "__freezer__/graphics/entity/spoilables-freezer/spoilables-freezer.png",
+      filename = "__freezer-forked__/graphics/entity/spoilables-freezer/spoilables-freezer.png",
       width = 256,
       height = 256,
       scale = 0.375,
@@ -116,7 +116,7 @@ local function make_chest(name, base, color)
     local freezer = util.table.deepcopy(data.raw["logistic-container"][base])
     freezer.name = name
     freezer.icons = {{
-        icon = "__freezer__/graphics/icons/spoilables-freezer.png",
+        icon = "__freezer-forked__/graphics/icons/spoilables-freezer.png",
         icon_size = 256,
         tint = color
                   }}
@@ -132,7 +132,7 @@ local function make_chest(name, base, color)
     freezer.dying_explosion = "medium-explosion"
     freezer.additional_pastable_entities = all_freezers
     freezer.picture = {
-        filename = "__freezer__/graphics/entity/spoilables-freezer/spoilables-freezer.png",
+        filename = "__freezer-forked__/graphics/entity/spoilables-freezer/spoilables-freezer.png",
         width = 256,
         height = 256,
         scale = 0.375,
@@ -163,7 +163,31 @@ if settings.startup["temp-limit"].value then
         max = temp_limit,
     }
   }
+  data.raw["logistic-container"]["spoilables-freezer-active-provider"].surface_conditions = {
+    {
+        property = "temperature",
+        max = temp_limit,
+    }
+  }
   data.raw["logistic-container"]["spoilables-freezer-provider"].surface_conditions = {
+    {
+        property = "temperature",
+        max = temp_limit,
+    }
+  }
+  data.raw["logistic-container"]["spoilables-freezer-storage"].surface_conditions = {
+    {
+        property = "temperature",
+        max = temp_limit,
+    }
+  }
+  data.raw["logistic-container"]["spoilables-freezer-buffer"].surface_conditions = {
+    {
+        property = "temperature",
+        max = temp_limit,
+    }
+  }
+  data.raw["logistic-container"]["spoilables-freezer-requester"].surface_conditions = {
     {
         property = "temperature",
         max = temp_limit,

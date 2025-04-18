@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "freezing",
-    icon = "__freezer__/graphics/technology/freezer.png",
+    icon = "__freezer-forked__/graphics/technology/freezer.png",
     icon_size = 256,
     prerequisites = {"fluid-handling"},
     unit = {
@@ -28,7 +28,7 @@ data:extend({
   {
     type = "technology",
     name = "spoilables-processing",
-    icon = "__freezer__/graphics/technology/ice.png",
+    icon = "__freezer-forked__/graphics/technology/ice.png",
     icon_size = 600,
     prerequisites = {"freezing", "chemical-science-pack"},
     unit = {
@@ -48,7 +48,7 @@ data:extend({
   {
     type = "technology",
     name = "refrigeration",
-    icon = "__freezer__/graphics/technology/spoilables-freezer.png",
+    icon = "__freezer-forked__/graphics/technology/spoilables-freezer.png",
     icon_size = 256,
     prerequisites = {"spoilables-processing", "cryogenic-science-pack"},
     unit = {
@@ -104,7 +104,7 @@ data:extend({
   {
     type = "technology",
     name = "refrigeration-logistics",
-    icon = "__freezer__/graphics/technology/spoilables-freezer.png",
+    icon = "__freezer-forked__/graphics/technology/spoilables-freezer.png",
     icon_size = 256,
     prerequisites = {"refrigeration", "promethium-science-pack"},
     unit = {
@@ -164,7 +164,7 @@ data:extend({
   {
     type = "technology",
     name = "refrigeration-wagons",
-    icon = "__freezer__/graphics/technology/refrigeration-wagons.png",
+    icon = "__freezer-forked__/graphics/technology/refrigeration-wagons.png",
     icon_size = 256,
     prerequisites = {"refrigeration"},
     unit = {
