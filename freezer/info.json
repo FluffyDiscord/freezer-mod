@@ -1,14 +1,15 @@
 {
-  "name": "freezer",
-  "title": "Freezer",    
-  "description": "Freeze water into ice. Enclose items in ice to slow spoiling.\nStore spoilables in a refrigerator to stop spoiling completely.\nFridges draw power based on ambient temperature.\nAlso has cooled wagons.",
-  "author": "estgamer",
-  "homepage": "https://github.com/lassethorlepik/freezer-mod",
+  "name": "freezer-forked",
+  "title": "Freezer-Forked",
+  "description": "Fork of the original Freezer mod by estgamer: https://mods.factorio.com/mod/freezer \n\nFreeze water into ice. Enclose items in ice to slow spoiling.\nStore spoilables in a refrigerator to stop spoiling completely.\nFridges draw power based on ambient temperature.\nAlso has cooled wagons and logistics refrigerators",
+  "author": "nightismyday",
+  "homepage": "https://github.com/LordNocturnus/freezer-mod",
   "version": "1.1.3",
   "factorio_version": "2.0",
   "dependencies": [
   "base >= 2.0.0",
   "space-age",
-  "PlanetsLib >= 1.1.24"
+  "PlanetsLib >= 1.1.24",
+  "! freezer"
   ]
 }
