@@ -62,6 +62,37 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "freeze-water-catalysed",
+        category = "freezer-cryogenics-category",
+        order = "2",
+        subgroup = "ice-subgroup",
+        enabled = false,
+        energy_required = 15,
+        ingredients = {
+            {
+                type = "fluid",
+                name = "water",
+                amount = 400
+            },
+            {
+                type = "item",
+                name = "ice",
+                amount = 2,
+                ignored_by_stats = 2
+            }
+        },
+        results = {
+            {
+                type = "item",
+                name = "ice",
+                amount = 12,
+                ignored_by_stats = 2,
+                ignored_by_productivity = 2
+            }
+        }
+    },
+    {
+        type = "recipe",
         name = "spoilables-freezer",
         category = "crafting",
         enabled = false,

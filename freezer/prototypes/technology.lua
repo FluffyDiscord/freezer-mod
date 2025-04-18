@@ -27,6 +27,25 @@ data:extend({
   },
   {
     type = "technology",
+    name = "freezing-catalyzed",
+    icon = "__space-age__/graphics/icons/ice.png",
+    icon_size = 256,
+    prerequisites = {"freezing"},
+    research_trigger = {
+      type = "craft-item",
+      item = "ice",
+      count = 10000
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "freeze-water-catalysed"
+      }
+    },
+    order = "a"
+  },
+  {
+    type = "technology",
     name = "spoilables-processing",
     icon = "__freezer-forked__/graphics/technology/ice.png",
     icon_size = 600,
