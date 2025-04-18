@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 31.01.2025
+  Info:
+    - Created the fork
+  Features:
+    - Added Logistics Refrigerators
+  Bugfixes:
+    - Fixed a crash that occurred when deconstructing a wagon with ghost equipment
+    - Fixed blueprints of refrigerators not including wires and filters
+  Changes:
+    - replaced proprietary temperature implementation with temperature from planetlib
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 31.01.2025
   Info:

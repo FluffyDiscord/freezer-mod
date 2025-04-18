@@ -1,4 +1,4 @@
-# Factorio freezer mod
+# Factorio freezer mod fork
 Fork of the original Freezer mod with a few bugfixes
 
 Changes made with respect to the original mod:
