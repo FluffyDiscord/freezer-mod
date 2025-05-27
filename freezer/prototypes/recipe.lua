@@ -68,6 +68,7 @@ data:extend({
         subgroup = "ice-subgroup",
         enabled = false,
         energy_required = 15,
+        auto_recycle = false,
         ingredients = {
             {
                 type = "fluid",

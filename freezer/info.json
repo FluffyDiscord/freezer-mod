@@ -4,7 +4,7 @@
   "description": "Fork of the original Freezer mod by estgamer: https://mods.factorio.com/mod/freezer \n\nFreeze water into ice. Enclose items in ice to slow spoiling.\nStore spoilables in a refrigerator to stop spoiling completely.\nFridges draw power based on ambient temperature.\nAlso has cooled wagons and logistics refrigerators",
   "author": "nightismyday",
   "homepage": "https://github.com/LordNocturnus/freezer-mod",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "factorio_version": "2.0",
   "dependencies": [
   "base >= 2.0.0",
